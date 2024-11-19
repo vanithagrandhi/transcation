@@ -1,0 +1,283 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    margin: 0;
+    padding: 0;
+}
+.back-btn {
+    position: fixed;
+    top: 0px;
+    
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.sub {
+    background-color: rgb(169, 169, 236);
+    width: 25%;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+}
+
+.sub:hover {
+    transform: translateY(-10px);
+}
+
+.head h1 {
+    margin-top: 50px;
+    color: hotpink;
+    text-align: center;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sub h4 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-top: 20%;
+    padding: 10px 20px;
+    background-color: plum;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: pink;
+}
+
+
+
+/* Account Section */
+.acc h1 {
+    text-align: center;
+    color: cornflowerblue;
+    padding-top: 5%;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+    background-color: cadetblue;
+    width: 40%;
+    line-height: 1.8;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto; /* Center the details box horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 18px;
+}
+
+.butt {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn1, .btn2, .btn3 {
+    padding: 15px 30px;
+    background-color: rgb(222, 156, 179);
+    margin: 0 15px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover {
+    background-color: lavender;
+    color: coral;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Credit Section */
+.creee h2 {
+    color: teal;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hint {
+    background-color: rgb(158, 102, 158);
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px auto; /* Center the hint box horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hold {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button0, .button9 {
+    padding: 12px 20px;
+    background-color: darkgray;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+}
+
+.button0:hover, .button9:hover {
+    background-color: gray;
+    color: whitesmoke;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn8 {
+    padding: 12px 20px;
+    background-color: plum;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.btn8:hover {
+    background-color: mediumvioletred;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/*Debit section*/
+
+.cre h2 {
+    color: teal;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.debit {
+    background-color: rgb(158, 102, 158);
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px auto; /* Center the debit box horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lab {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+#debit_amt {
+    width: calc(100% - 24px); /* Adjust width to fit the padding */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.subm {
+    padding: 12px 20px;
+    background-color: plum;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.subm:hover {
+    background-color: mediumvioletred;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.mix {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.check, .accountt {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+}
+
+.check {
+    background-color: darkgray;
+}
+
+.accountt {
+    background-color: darkgray;
+}
+
+.check:hover, .accountt:hover {
+    background-color: gray;
+    color: whitesmoke;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

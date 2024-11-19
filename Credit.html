@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Credit Account</title>
+</head>
+<body>
+    <div class="back-btn"></div>
+        <a href="../index.html" class="btn btn-primary">Back to Home</a>
+    </div>
+    <section>
+        <div class="creee">
+            <h2>CREDIT ACCOUNT</h2>
+        </div>
+        <div class="hint">
+            <form id="creditForm">
+                <label>Credit Amount:</label><br>
+                <input type="number" id="amount" placeholder="Amount" step="0.01" min="0" required>
+                <button type="submit" class="btn8">Submit</button>
+            </form>
+        </div>
+        <div class="hold">
+            <button class="button9" onclick="Home()">Home</button>
+            <button class="button0" onclick="check_balance()">Check balance</button>
+            <button class="button9" onclick="Dedit_account()">Debit Account</button>
+            
+        </div>
+    </section>
+
+    <script>
+
+        function Home() {
+            var result = confirm("Are you sure?");
+            if (result) {
+                let userrr = +prompt("Enter the pin:");
+                if(userrr=== ""){
+                alert("Please enter the password");
+            }
+                else if (userrr === 1234) {
+                    window.location.href = 'index.html';
+                } else {
+                    alert("Invalid pin");
+                }
+            } else {
+                alert("You clicked no.");
+            }
+        }
+
+        
+        function check_balance() {
+            var result = confirm("Are you sure?");
+            if (result) {
+                let userrr = +prompt("Enter the pin:");
+                if(userrr=== ""){
+                alert("Please enter the password");
+            }
+                else if (userrr === 1234) {
+                    window.location.href = 'Account details.html';
+                } else {
+                    alert("Invalid pin");
+                }
+            } else {
+                alert("You clicked no.");
+            }
+        }
+
+        function Dedit_account() {
+            var result = confirm("Are you sure?");
+    
+             if (result) {
+                let userpin = +prompt("Enter the pin:");
+                if (userpin === 1234) {
+                    window.location.href = 'Debit.html';
+                } else {
+                    alert("Invalid pin");
+                }
+            } else {
+                alert("You clicked no.");
+            }
+        }
+
+        document.getElementById('creditForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let creditAmount = parseFloat(document.getElementById('amount').value);
+            let balance = parseFloat(localStorage.getItem('balance')) || 0;
+
+            if (!isNaN(creditAmount) && creditAmount > 0) {
+                balance += creditAmount;
+                localStorage.setItem('balance', balance);
+
+                document.getElementById('amount').value = '';
+
+                alert(`Amount credited successfully! Your new balance is $${balance.toFixed(2)}`);
+                window.location.href = 'Account details.html';
+            } else {
+                alert("Invalid amount entered. Please enter a positive number.");
+            }
+        });
+    </script>
+</body>
+</html>

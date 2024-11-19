@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Account Details</title>
+</head>
+<body>
+    <div class="back-btn"></div>
+    <a href="../index.html" class="btn btn-primary">Back to Home</a>
+    </div>
+    <div class="acc">
+        <h1>ACCOUNT DETAILS</h1>
+    </div>
+    <div class="details">
+        <h4>Account Holder: Grandhi Vanitha</h4>
+        <h4>Account Number: 456-789-123</h4>
+        <h4>Phone Number: 123123499</h4>
+        <h4>Account IFSC code: BOI7897438</h4>
+        <h4>Account Type: Saving Account</h4>
+        <h4>Bank Name: BOI</h4>
+        <h4 id="accountBalance">Account Balance: $50000</h4>
+    </div>
+    <div class="butt">
+        <button class="btn1" onclick="checkPin()">Home</button>
+        <button class="btn2" onclick="checkpin1()">Credit</button>
+        <button class="btn3" onclick="checkPin2()">Debit</button>
+    </div>
+
+    <script>
+        function checkPin() {
+            let pin = prompt("Enter your PIN:");
+            if(pin=== ""){
+                alert("Please enter the password");
+            }
+            else if(pin === '1234') {
+                window.location.href = 'index.html'; 
+            } else {
+                alert("Incorrect pin");
+            }
+        }
+
+        function checkpin1() {
+            let pin = prompt("Enter your PIN:");
+            if(pin=== ""){
+                alert("Please enter the password");
+            }
+            else if (pin === '1234') {
+                window.location.href = 'Credit.html'; 
+            } else {
+                alert("Incorrect pin");
+            }
+        }
+
+        function checkPin2() {
+            let pin = prompt("Enter your PIN:");
+            if(pin=== ""){
+                alert("Please enter the password");
+            }
+            else if (pin === '1234') {
+                window.location.href = 'Debit.html'; 
+            } else {
+                alert("Incorrect pin");
+            }
+        }
+
+        
+        let updatedBalance = parseFloat(localStorage.getItem('balance')) || 0;
+        document.getElementById('accountBalance').innerText = `Account Balance: $${updatedBalance.toFixed(2)}`;
+    </script>
+</body>
+</html>
